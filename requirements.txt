@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-dotenv
+google-cloud-firestore
+langchain
+openai
+langchain-openai
+langchain-community
+faiss-cpu
+chromadb
+sentence-transformers
+numpy
