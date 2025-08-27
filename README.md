@@ -59,4 +59,14 @@
 
 ```bash
 git clone https://github.com/yourusername/llm-transcript-rag.git
-cd llm-transcript-rag
+cd llm-transcript-rag 
+```
+### 2. Set up environment variables
+Create a .env file in the root directory:
+### 3. Run with Docker 🐳
+
+```bash
+docker build -t transcript-rag .
+docker run -d -p 8000:8000 --env-file .env -v $(pwd)/service-account.json:/app/service-account.json transcript-rag
+```
+Now open 👉 http://localhost:8000/docs

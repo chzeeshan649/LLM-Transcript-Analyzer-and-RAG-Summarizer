@@ -27,7 +27,7 @@ def extract_blocks(raw_text: str) -> List[Dict]:
         blocks[i]["end"] = end
     return blocks
 
-def blocks_to_documents(blocks: List[Dict], chunk_size: int = 1000, overlap: int = 200) -> List[Document]:
+def blocks_to_documents(blocks: List[Dict], chunk_size: int = 100, overlap: int = 50) -> List[Document]:
     stitched = []
     for b in blocks:
         stitched.append(f"[[TS:{b['start']}]] {b['text']}")
