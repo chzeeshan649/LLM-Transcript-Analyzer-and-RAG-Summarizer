@@ -70,3 +70,6 @@ docker build -t transcript-rag .
 docker run -d -p 8000:8000 --env-file .env -v $(pwd)/service-account.json:/app/service-account.json transcript-rag
 ```
 Now open 👉 http://localhost:8000/docs
+
+### 4. For demo open this link
+https://drive.google.com/file/d/1i2aYCyI-6r4oyBrempN-EY9RMSNQsHl0/view?usp=drive_link
