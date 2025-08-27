@@ -154,8 +154,6 @@ dmypy.json
 **/.vscode/
 
 .dockerenv
-Dockerfile
-docker-compose.yaml
 # Only for Development only
 **/migrations/
 **/**/migrations
@@ -165,6 +163,5 @@ deploy.sh
 .cache
 .env
 main2.py
-docker-compose.yml
 transcript-rag-summarizer-firebase-adminsdk-fbsvc-8ed5121a07.json
 data

@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  backend:
+    build: .
+    container_name: transcript_rag
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - ./data:/app/data
+      - ./service-account.json:/app/service-account.json
+    env_file:
+      - ./.env
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
