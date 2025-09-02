@@ -72,4 +72,4 @@ docker run -d -p 8000:8000 --env-file .env -v $(pwd)/service-account.json:/app/s
 Now open 👉 http://localhost:8000/docs
 
 ### 4. For demo open this link
-https://drive.google.com/drive/folders/1GatwDVnZpmZ9LEtZRqHmtwu6zwY2GvkK
+https://drive.google.com/drive/folders/1kOc5KWKG68eusiJ_IA7vEgz15wNUHb_b?usp=drive_link
